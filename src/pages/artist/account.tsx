@@ -5,14 +5,14 @@ export default function ArtistProfile() {
     return (
         <div className="min-h-screen bg-[#F8F9FB] pb-12">
             {/* 1. HERO BANNER */}
-            <div className="relative h-[400px] w-full">
+            <div className="relative h-[300px] w-full">
                 <img
                     src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e"
                     className="w-full h-full object-cover"
                     alt="Artist cover"
                 />
                 {/* Profile Avatar Overlay */}
-                <div className="absolute -bottom-16 left-1/2 -translate-x-1/2">
+                <div className="absolute -bottom-16 left-1/4 -translate-x-1/2">
                     <div className="relative">
                         <img
                             src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e"
@@ -27,9 +27,9 @@ export default function ArtistProfile() {
             <div className="max-w-6xl mx-auto px-4 mt-20 grid grid-cols-1 lg:grid-cols-12 gap-8">
 
                 {/* LEFT COLUMN (SIDEBAR) - 4/12 width */}
-                <div className="lg:col-span-4 space-y-6">
+                <div className="lg:col-span-6 space-y-6">
                     {/* Main Info Card */}
-                    <div className="bg-white rounded-2xl p-8 shadow-sm text-center">
+                    <div className="bg-white rounded-2xl p-8 shadow-md text-center">
                         <h1 className="text-4xl font-bold text-gray-900">Alex Jean</h1>
                         <div className="flex justify-center items-center mt-1 text-yellow-500 font-medium">
                             <Star size={16} fill="currentColor" />
@@ -96,7 +96,7 @@ export default function ArtistProfile() {
                 </div>
 
                 {/* RIGHT COLUMN (DETAILS) - 8/12 width */}
-                <div className="lg:col-span-8 space-y-6">
+                <div className="lg:col-span-6 space-y-6">
                     <div className="bg-white rounded-2xl p-8 shadow-sm">
                         {/* Overview Header */}
                         <div className="flex justify-between items-start mb-6">
