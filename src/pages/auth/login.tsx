@@ -38,7 +38,7 @@ export default function SignIn() {
                         </span>
 
                         <button
-                            onClick={() => navigate("/account")}
+                            onClick={() => navigate("/information")}
                             className="w-full bg-red-600 text-white py-3 rounded-full font-medium"
                         >
                             Login

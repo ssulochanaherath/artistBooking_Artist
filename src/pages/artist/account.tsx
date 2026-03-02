@@ -284,7 +284,7 @@ export default function ArtistProfile() {
                             </div>
                             <textarea
                                 className="w-full mt-6 p-4 bg-gray-50 border border-gray-100 rounded-xl text-sm focus:outline-none focus:ring-1 focus:ring-gray-200"
-                                rows="4"
+                                rows={4}
                                 placeholder="Write review here"
                             ></textarea>
                         </div>
