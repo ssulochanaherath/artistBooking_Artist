@@ -11,8 +11,10 @@ const Information: React.FC = () => {
             {/* POPUP CONTAINER */}
             <div className="w-full max-w-6xl bg-white rounded-3xl shadow-2xl overflow-hidden relative">
 
-                {/* Back to Home */}
-                <div className="absolute top-6 right-8 text-red-500 text-sm font-medium cursor-pointer z-10">
+                <div
+                    onClick={() => navigate("/login")}
+                    className="absolute top-6 right-8 text-red-500 text-sm font-medium cursor-pointer z-10"
+                >
                     Back to Home
                 </div>
 
@@ -184,7 +186,10 @@ const Information: React.FC = () => {
                             </div>
 
                             <button
-                                onClick={() => navigate("/verification")}
+                                onClick={() => {
+                                    window.scrollTo(0, 0);
+                                    navigate("/verification");
+                                }}
                                 className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-full font-medium transition"
                             >
                                 continue →

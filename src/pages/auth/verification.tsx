@@ -11,8 +11,10 @@ const Verification: React.FC = () => {
             {/* POPUP CONTAINER */}
             <div className="w-full max-w-6xl bg-white rounded-3xl shadow-2xl overflow-hidden relative">
 
-                {/* Back */}
-                <div className="absolute top-6 right-8 text-sm font-medium cursor-pointer flex items-center gap-2">
+                <div
+                    onClick={() => navigate("/information")}
+                    className="absolute top-6 right-8 text-sm font-medium cursor-pointer flex items-center gap-2"
+                >
                     ← Back
                 </div>
 
@@ -166,7 +168,10 @@ const Verification: React.FC = () => {
                             </div>
 
                             <button
-                                onClick={() => navigate("/verification")}
+                                onClick={() => {
+                                    window.scrollTo(0, 0);
+                                    navigate("/talent");
+                                }}
                                 className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-full font-medium transition"
                             >
                                 continue →
