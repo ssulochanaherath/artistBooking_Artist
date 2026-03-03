@@ -132,7 +132,9 @@ const Talent: React.FC = () => {
                             </div>
 
                             <button
-                                onClick={() => alert("Onboarding Complete 🎉")}
+                                onClick={() => {
+                                    navigate("/account");
+                                }}
                                 className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-full font-medium transition"
                             >
                                 continue →
