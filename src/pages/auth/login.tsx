@@ -78,7 +78,7 @@ export default function SignIn() {
 
                 {/* RIGHT SIDE IMAGE */}
                 <div className="flex items-center justify-center">
-                    <div className="relative w-[280px] h-[420px] rounded-[40px] overflow-hidden shadow-lg">
+                    <div className="relative w-[300px] h-[420px] rounded-[40px] overflow-hidden shadow-lg">
 
                         <img
                             src="https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2"
