@@ -119,7 +119,6 @@ export default function SignIn() {
                 <span>|</span>
                 <span className="cursor-pointer">Terms & Conditions</span>
             </div>
-
         </div>
     );
 }
