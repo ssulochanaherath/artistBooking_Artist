@@ -1,6 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
-import stage from "../../assets/image/stage.jpg";
+import stage from "../../../public/bg-login.png";
+import artistImage from "../../../public/person.png";
 
 export default function SignUp() {
     const navigate = useNavigate();
@@ -14,7 +15,7 @@ export default function SignUp() {
             {/* CENTER AREA */}
             <div className="flex-grow flex items-center justify-center p-4">
 
-                <div className="bg-gray-100 w-full max-w-5xl rounded-sm shadow-xl grid grid-cols-1 lg:grid-cols-2 p-6 md:p-10">
+                <div className="bg-gray-100 w-full max-w-4xl rounded-sm shadow-xl grid grid-cols-1 lg:grid-cols-2 p-6 md:p-10">
 
                     {/* LEFT SIDE */}
                     <div className="pr-0 lg:pr-10">
@@ -58,7 +59,7 @@ export default function SignUp() {
                             <button
                                 onClick={() => {
                                     window.scrollTo(0, 0);
-                                    navigate("/information");
+                                    navigate("/login");
                                 }}
                                 className="w-full bg-red-600 hover:bg-red-700 text-white py-3 rounded-full font-medium"
                             >
@@ -73,7 +74,7 @@ export default function SignUp() {
                         <div className="relative w-full max-w-[280px] md:max-w-[320px] h-[360px] md:h-[420px] rounded-[40px] overflow-hidden shadow-lg">
 
                             <img
-                                src="https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2"
+                                src={artistImage}
                                 className="w-full h-full object-cover grayscale"
                             />
 
