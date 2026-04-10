@@ -27,11 +27,11 @@ const Information: React.FC = () => {
 
                     {/* LEFT SIDE (FIXED + BACKGROUND IMAGE) */}
                     <div
-                        className="relative p-16 flex flex-col justify-center h-full bg-cover bg-center text-white"
-                        style={{ backgroundImage: `url(${stage})` }}
+                        className="relative p-16 flex flex-col justify-center h-full bg-cover bg-center"
+                        //style={{ backgroundImage: `url(${stage})` }}
                     >
                         {/* DARK OVERLAY */}
-                        <div className="absolute inset-0 bg-black/50"></div>
+                        <div className="absolute inset-0 bg-white"></div>
 
                         {/* CONTENT */}
                         <div className="relative z-10">
@@ -41,7 +41,7 @@ const Information: React.FC = () => {
                                 started
                             </h1>
 
-                            <p className="mt-6 max-w-sm leading-relaxed text-gray-200">
+                            <p className="mt-6 max-w-sm leading-relaxed">
                                 Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor amet,
                                 consectetur Lorem ipsum
                             </p>

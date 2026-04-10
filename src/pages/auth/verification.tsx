@@ -12,7 +12,7 @@ const Verification: React.FC = () => {
             style={{ backgroundImage: `url(${stage})` }}
         >
             {/* POPUP CONTAINER */}
-            <div className="relative w-full max-w-6xl h-[90vh] bg-white/90 backdrop-blur-xl rounded-2xl shadow-2xl overflow-hidden">
+            <div className="relative w-full max-w-6xl h-[90vh] bg-white rounded-2xl shadow-2xl overflow-hidden">
 
                 {/* BACK BUTTON */}
                 <div
@@ -26,11 +26,11 @@ const Verification: React.FC = () => {
 
                     {/* LEFT SIDE (FIXED + BACKGROUND IMAGE) */}
                     <div
-                        className="relative p-16 flex flex-col justify-center h-full bg-cover bg-center text-white"
-                        style={{ backgroundImage: `url(${stage})` }}
+                        className="relative p-16 flex flex-col justify-center h-full bg-cover bg-center"
+                        //style={{ backgroundImage: `url(${stage})` }}
                     >
                         {/* DARK OVERLAY */}
-                        <div className="absolute inset-0 bg-black/50"></div>
+                        <div className="absolute inset-0 bg-white"></div>
 
                         {/* CONTENT */}
                         <div className="relative z-10">
@@ -40,7 +40,7 @@ const Verification: React.FC = () => {
                                 Identity
                             </h1>
 
-                            <p className="mt-6 text-gray-200 max-w-md leading-relaxed">
+                            <p className="mt-6  max-w-md leading-relaxed">
                                 We verify all artists to keep the platform safe and trusted.
                                 Your documents are fully encrypted and never shared with
                                 third parties.

@@ -12,7 +12,7 @@ const Talent: React.FC = () => {
             style={{ backgroundImage: `url(${stage})` }}
         >
             {/* POPUP CONTAINER */}
-            <div className="relative w-full max-w-6xl h-[90vh] bg-white/90 backdrop-blur-xl rounded-2xl shadow-2xl overflow-hidden">
+            <div className="relative w-full max-w-6xl h-[90vh] bg-white rounded-2xl shadow-2xl overflow-hidden">
 
                 {/* Back Button */}
                 <div
@@ -26,11 +26,11 @@ const Talent: React.FC = () => {
 
                     {/* LEFT SIDE (FIXED + BACKGROUND IMAGE) */}
                     <div
-                        className="relative p-16 flex flex-col justify-center h-full bg-cover bg-center text-white"
-                        style={{ backgroundImage: `url(${stage})` }}
+                        className="relative p-16 flex flex-col justify-center h-full bg-cover bg-center"
+                        //style={{ backgroundImage: `url(${stage})` }}
                     >
                         {/* DARK OVERLAY */}
-                        <div className="absolute inset-0 bg-black/50"></div>
+                        <div className="absolute inset-0 bg-white"></div>
 
                         {/* CONTENT */}
                         <div className="relative z-10">
@@ -40,7 +40,7 @@ const Talent: React.FC = () => {
                                 your talent
                             </h1>
 
-                            <p className="mt-6 text-gray-200 max-w-md leading-relaxed">
+                            <p className="mt-6 max-w-md leading-relaxed">
                                 Add your best performances — videos, audio tracks, and social
                                 profiles so we can verify your work as an artist.
                             </p>
