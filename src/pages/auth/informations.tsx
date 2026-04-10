@@ -95,7 +95,7 @@ const Information: React.FC = () => {
                                 <div className="w-5 h-5 rounded-full border flex items-center justify-center text-xs">
                                     3
                                 </div>
-                                Go Live
+                                Talent Show Case
                             </div>
                         </div>
 
