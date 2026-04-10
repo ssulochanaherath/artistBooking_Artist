@@ -72,9 +72,9 @@ export default function SignUp() {
                                     window.scrollTo(0, 0);
                                     navigate("/login");
                                 }}
-                                className="w-full relative overflow-hidden bg-gradient-to-r from-red-500 via-red-600 to-red-700 text-white font-medium py-3 rounded-full shadow-[0_10px_25px_rgba(239,68,68,0.5)] hover:shadow-[0_15px_35px_rgba(239,68,68,0.7)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-300"
+                                className="bg-[#DB0000] text-white px-40 py-4 rounded-lg"
                             >
-                                Sign Up
+                                Create
                             </button>
 
                         </div>
