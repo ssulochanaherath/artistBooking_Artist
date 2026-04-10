@@ -1,8 +1,10 @@
 import React, { useState } from "react";
+import {useNavigate} from "react-router-dom";
 
 export default function ProfileRequestsUI() {
     const [selected, setSelected] = useState(false);
     const [accepted, setAccepted] = useState(false);
+    const navigate = useNavigate();
 
     const handleAccept = () => {
         setAccepted(true);
@@ -42,7 +44,7 @@ export default function ProfileRequestsUI() {
                             </div>
                             <div className="flex justify-between">
                                 <span className="text-gray-500">New Request</span>
-                                <span className="text-red-500 font-medium">12</span>
+                                <span className="text-red-500 font-medium">1</span>
                             </div>
                             <div className="flex justify-between">
                                 <span className="text-gray-500">Response Rate</span>
@@ -62,8 +64,11 @@ export default function ProfileRequestsUI() {
                 {/* RIGHT PANEL */}
                 <div className="col-span-2">
                     <div className="flex justify-between items-center mb-4">
-                        <h3 className="text-sm text-gray-500">Pending Requests · 4</h3>
-                        <button className="text-red-500 text-sm">Back to Profile</button>
+                        <h3 className="text-sm text-gray-500">Pending Requests · 1</h3>
+                        <button
+                            onClick={() => navigate("/account")}
+                            className="text-red-500 text-sm">Back to Profile</button
+                        >
                     </div>
 
                     <div className="bg-white rounded-2xl shadow p-4 flex items-center justify-between border-l-4 border-red-500">
