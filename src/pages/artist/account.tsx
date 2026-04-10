@@ -23,12 +23,22 @@ export default function ArtistProfile() {
     return (
         <div className="min-h-screen bg-[#F8F9FB] pb-16">
             {/* HERO */}
+
             <div className="relative h-[200px] sm:h-[230px] lg:h-[280px] w-full">
                 <img
                     src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e"
                     className="w-full h-full object-cover"
                     alt="Artist cover"
                 />
+
+                <div className="absolute top-4 right-4 flex gap-3">
+                    <button
+                        onClick={() => navigate("/bookingRequests")}
+                        className="bg-white px-4 py-2 rounded-lg shadow text-sm"
+                    >
+                        Booking Requests
+                    </button>
+                </div>
 
                 {/* Avatar */}
                 <div className="absolute -bottom-16 left-1/2 -translate-x-1/2 lg:left-1/4">
