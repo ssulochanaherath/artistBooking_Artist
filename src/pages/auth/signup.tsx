@@ -15,44 +15,55 @@ export default function SignUp() {
             {/* CENTER AREA */}
             <div className="flex-grow flex items-center justify-center p-4">
 
-                <div className="bg-gray-100 w-full max-w-4xl rounded-sm shadow-xl grid grid-cols-1 lg:grid-cols-2 p-6 md:p-10">
+                <div className="relative overflow-hidden bg-white/90 backdrop-blur-xl border border-white/40 w-full max-w-4xl rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.3)] grid grid-cols-1 lg:grid-cols-2 p-6 md:p-10">
+
+                    {/* LIGHT REFLECTION */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-white/40 via-transparent to-transparent pointer-events-none"></div>
 
                     {/* LEFT SIDE */}
-                    <div className="pr-0 lg:pr-10">
+                    <div className="pr-0 lg:pr-10 relative z-10">
 
                         <div className="flex items-center justify-between mb-10">
-                            <ArrowLeft className="cursor-pointer text-gray-600" size={20} />
-                            <Link to="/login" className="text-sm text-gray-500">
+                            <ArrowLeft
+                                className="cursor-pointer text-gray-600 hover:text-black transition-colors"
+                                size={20}
+                            />
+                            <Link
+                                to="/login"
+                                className="text-sm text-gray-500 hover:text-black transition-colors"
+                            >
                                 + already have an account
                             </Link>
                         </div>
 
-                        <h1 className="text-2xl font-semibold mb-10">Sign up</h1>
+                        <h1 className="text-3xl font-semibold mb-10 text-black">
+                            Sign up
+                        </h1>
 
                         {/* FORM */}
                         <div className="space-y-6">
 
                             <div>
-                                <p className="text-sm text-gray-500 mb-1">Email</p>
+                                <p className="text-sm text-black mb-1">Email</p>
                                 <input
                                     type="email"
-                                    className="w-full border-b border-gray-300 bg-transparent outline-none py-2"
+                                    className="w-full border-b border-gray-300 bg-transparent outline-none py-2 text-black focus:border-black transition-all duration-300"
                                 />
                             </div>
 
                             <div>
-                                <p className="text-sm text-gray-500 mb-1">Password</p>
+                                <p className="text-sm text-black mb-1">Password</p>
                                 <input
                                     type="password"
-                                    className="w-full border-b border-gray-300 bg-transparent outline-none py-2"
+                                    className="w-full border-b border-gray-300 bg-transparent outline-none py-2 text-black focus:border-black transition-all duration-300"
                                 />
                             </div>
 
                             <div>
-                                <p className="text-sm text-gray-500 mb-1">Confirm Password</p>
+                                <p className="text-sm text-black mb-1">Confirm Password</p>
                                 <input
                                     type="password"
-                                    className="w-full border-b border-gray-300 bg-transparent outline-none py-2"
+                                    className="w-full border-b border-gray-300 bg-transparent outline-none py-2 text-black focus:border-black transition-all duration-300"
                                 />
                             </div>
 
@@ -61,7 +72,7 @@ export default function SignUp() {
                                     window.scrollTo(0, 0);
                                     navigate("/login");
                                 }}
-                                className="w-full bg-red-600 hover:bg-red-700 text-white py-3 rounded-full font-medium"
+                                className="w-full relative overflow-hidden bg-gradient-to-r from-red-500 via-red-600 to-red-700 text-white font-medium py-3 rounded-full shadow-[0_10px_25px_rgba(239,68,68,0.5)] hover:shadow-[0_15px_35px_rgba(239,68,68,0.7)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-300"
                             >
                                 Sign Up
                             </button>
@@ -70,8 +81,8 @@ export default function SignUp() {
                     </div>
 
                     {/* RIGHT IMAGE */}
-                    <div className="flex items-center justify-center mt-10 lg:mt-0">
-                        <div className="relative w-full max-w-[280px] md:max-w-[320px] h-[360px] md:h-[420px] rounded-[40px] overflow-hidden shadow-lg">
+                    <div className="flex items-center justify-center mt-10 lg:mt-0 relative z-10">
+                        <div className="relative w-full max-w-[280px] md:max-w-[320px] h-[360px] md:h-[420px] rounded-[40px] overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.5)] hover:scale-105 transition-all duration-300">
 
                             <img
                                 src={artistImage}
@@ -86,6 +97,13 @@ export default function SignUp() {
                                 Lorem ipsum dolor sit amet, consectetur scing elit.
                             </div>
 
+                            {/* DOTS */}
+                            <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1">
+                                <div className="w-2 h-2 bg-white rounded-full"></div>
+                                <div className="w-2 h-2 bg-white/40 rounded-full"></div>
+                                <div className="w-2 h-2 bg-white/40 rounded-full"></div>
+                            </div>
+
                         </div>
                     </div>
 
@@ -95,11 +113,11 @@ export default function SignUp() {
 
             {/* FOOTER */}
             <div className="text-white text-xs md:text-sm flex justify-center gap-4 pb-4 flex-wrap">
-                <span className="cursor-pointer">Contact</span>
+                <span className="cursor-pointer hover:opacity-70 transition">Contact</span>
                 <span>|</span>
-                <span className="cursor-pointer">Privacy</span>
+                <span className="cursor-pointer hover:opacity-70 transition">Privacy</span>
                 <span>|</span>
-                <span className="cursor-pointer">Terms & Conditions</span>
+                <span className="cursor-pointer hover:opacity-70 transition">Terms & Conditions</span>
             </div>
 
         </div>
